@@ -1,0 +1,53 @@
+📌 ESP32 Web-Based LED Control (SoftAP Mode)
+
+This project demonstrates a standalone ESP32 web server that controls two LEDs through a browser-based interface without requiring any external Wi-Fi router or internet connection.
+
+The ESP32 operates in Soft Access Point (SoftAP) mode, creating its own Wi-Fi network. Any nearby device (mobile or laptop) can connect directly to the ESP32 and control the LEDs using on-screen buttons. The LED states and button labels update dynamically between ON and OFF.
+
+🔑 Key Features
+
+ESP32 runs as a Wi-Fi Access Point
+
+No router, no internet, no external SSID/password required
+
+Web-based control using any browser
+
+Two independent LEDs with real-time ON/OFF status
+
+Simple, lightweight HTML interface
+
+Ideal for college projects, demos, and IoT fundamentals
+
+🛠 Technologies Used
+
+ESP32
+
+Arduino IDE
+
+WiFi.h
+
+WebServer.h
+
+HTML & CSS (embedded)
+
+📡 How It Works
+
+ESP32 creates a Wi-Fi network (SoftAP mode)
+
+User connects to ESP32 Wi-Fi from phone/laptop
+
+Web server runs at http://192.168.4.1
+
+Button clicks send HTTP requests to ESP32
+
+ESP32 toggles LED states accordingly
+
+🎯 Use Cases
+
+IoT learning projects
+
+Embedded systems demonstrations
+
+Offline device control
+
+Network-restricted environments (college/hostel Wi-Fi)
